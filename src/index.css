@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+
+}
+
+.dark-gradient {
+  background: linear-gradient(131deg, rgb(113, 143, 175) 0.00%, rgb(69, 92, 114) 65.65%);
+  width: 100%;
+}
+
+.bg-image {
+  background: url("../technician.png") no-repeat top right;
+  padding: 20px;
+  height: 65vh;
+  max-height: 720px;
+}
+
+
+.light-gradient {
+  background: #ff4b1f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9068, #ff4b1f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-container {
+  border: 3px solid #00fad4;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 24px;
+  color: #24243e;
+  text-align: center;
+}
+
+.bg-crimson {
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  height: 20.847cm;
+  margin-bottom: 4px;
+  padding: 12px;
+  width: 16.2cm;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 1px 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-pdf {
+  height: 48px;
+}
+
+.btn {
+  /* padding: 16px 16px; */
+  border-radius: 50%;
+  border: 3px solid #06ac59;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-weight: bold;
+
+  height: 72px;
+  width: 72px;
+
+  position: fixed;
+  top: 10%;
+  right: 20%;
+
+  box-shadow: rgb(38, 57, 77) 5px 20px 30px -10px;
+
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.90);
+
+}
+
+.image {
+  width: 400px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p16 {
+  padding: 16px;
+}
+
+/* CSS file from react router dom */
+
+
+@media screen and ( max-width: 600px ) {
+  .dark-gradient {
+    background:  #374757;
+    width: 100%;
+  }
+}

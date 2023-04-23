@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+
+
+.sidebar {
+  width: 248px;
+  height: 982px;
+  background: linear-gradient(135deg, #32414d, #0b0e10);
+  font-family: 'Roboto', sans-serif;
+  color: d9d9d9;
+  display: flex;
+  flex-direction: column;
+padding: 24px 12px 0 12px;
+  position: relative;
+}
+
+.sidebar-title {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+.sidebar-a {
+  text-decoration: inherit;
+  color: #d9d9d9;
+  cursor: pointer;
+  
+  align-items: center;
+  display: flex;
+  height: 56px;
+}
+
+.sidebar-item_wrapper {
+  width: 100%;
+  border-bottom: 1px solid #f5f5f50d;
+  color: #b3b3b3;
+}
+.sidebar-item_wrapper:last-child {
+  border-bottom: none;
+}
+
+.sidebar-item_icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-item_tag {
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.sidebar-item_wrapper:hover,
+.activeLink {
+  border-top: 1px solid #76ff0334;
+  background: radial-gradient(ellipse farthest-corner at top center,
+      #b2ff5967,
+      #1c1b3321 75%) no-repeat;
+
+  color: #fff;
+}
+
+.sidebar-title_wrapper{
+  height: 72px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-title_icon{
+  width: 40px;
+  padding-left: 12px;
+}
+
+.lg_icon {
+  color: #fff;
+  width: 12px;
+  margin: 0 16px;
+}
+
+.sidebar-dot_menu{
+  display: flex;
+  height: 36px;
+  padding-left: 12px;
+
+}
+.sidebar-dot{
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.green{
+  background-color: #61C554;
+  border: 1px solid #4d9b42;
+}
+
+.accent{
+  border-top: 1px solid #ff800084;
+  background: radial-gradient(ellipse farthest-corner at top center,
+      #ff800067,
+      #1c1b3321 75%) no-repeat;
+
+  color: #fff;
+  
+  width: 248px;
+  position: absolute;
+
+  bottom: 0px;
+  left: 0;
+}
+
+.red{
+  background-color: #ED695E;
+  border: 1px solid #b85249;
+}
+
+.yellow{
+  background-color: #F4BF4F;
+  border: 1px solid #ca9f44;
+}
