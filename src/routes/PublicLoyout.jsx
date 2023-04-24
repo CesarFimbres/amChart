@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Sidebar } from "../components/sidebar";
 import { Home } from "../pages/Home";
 
-export const LayoutPublic = () => {
+export const PublicLayout = () => {
 	const [isLoading, setIsLoading] = useState(true);
 
 	return (

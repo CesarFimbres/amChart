@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { PRIVATE_PATH, PUBLIC_PATH } from "../routes/pathway";
 
 import "./sidebar.css";
 import contact from "../assets/images/contact.svg";
@@ -7,6 +8,8 @@ import follow from "../assets/images/follow.svg";
 import home from "../assets/images/home.svg";
 import lineMenu from "../assets/images/line-menu.svg";
 import chartLine from "../assets/images/chart-line.svg";
+
+const { HOME, ABOUT, BLOG, CHART, REPORT } = PUBLIC_PATH;
 
 export const Sidebar = () => {
 	return (
@@ -27,7 +30,7 @@ export const Sidebar = () => {
 
 			</Link> */}
 			<div className="sidebar-item_wrapper">
-				<NavLink className="sidebar-a" to={"/"}>
+				<NavLink className="sidebar-a" to={HOME}>
 					<div className="sidebar-item_icon">
 						<img src={home} alt="Home icon" />
 					</div>
@@ -36,7 +39,7 @@ export const Sidebar = () => {
 			</div>
 
 			<div className="sidebar-item_wrapper activeLink">
-				<NavLink className="sidebar-a" to={"/chart"}>
+				<NavLink className="sidebar-a" to={CHART}>
 					<div className="sidebar-item_icon">
 						<img src={chartLine} alt="Document icon" />
 					</div>
@@ -45,7 +48,7 @@ export const Sidebar = () => {
 			</div>
 
 			<div className="sidebar-item_wrapper">
-				<NavLink className="sidebar-a" to={"/blog"}>
+				<NavLink className="sidebar-a" to={BLOG}>
 					<div className="sidebar-item_icon">B</div>
 					<div className="sidebar-item_tag">Blog</div>
 				</NavLink>
@@ -61,7 +64,7 @@ export const Sidebar = () => {
 			</div>
 
 			<div className="sidebar-item_wrapper accent">
-				<NavLink className="sidebar-a" to={"/report"}>
+				<NavLink className="sidebar-a" to={REPORT}>
 					<div className="sidebar-item_icon">
 						<img src={follow} alt="Follow report template" />
 					</div>
