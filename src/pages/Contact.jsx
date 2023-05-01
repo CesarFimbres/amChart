@@ -11,7 +11,7 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact"  className="p16">
+    <div id="contact">
       <div>
         <img
           key={contact.avatar}

@@ -10,6 +10,7 @@ html,
 body {
   display: flex;
   flex-direction: column;
+  background-color: #32414d;
 }
 
 main {
@@ -18,7 +19,8 @@ main {
 }
 
 .dark-gradient {
-  background: linear-gradient(131deg, rgb(113, 143, 175) 0.00%, rgb(69, 92, 114) 65.65%);
+  background: linear-gradient(225deg, #32414d, #0b0e10);
+  /* background: linear-gradient(131deg, rgb(113, 143, 175) 0.00%, rgb(69, 92, 114) 65.65%); */
   width: 100%;
 }
 

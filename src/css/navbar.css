@@ -1,0 +1,15 @@
+nav{
+  align-items: center;
+  background: linear-gradient(150deg, #1f292d  , #f95001c2 );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #f5f5ff;
+  display: flex;
+  font-size: 0.75rem;
+  height: 48px;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}

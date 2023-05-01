@@ -3,11 +3,12 @@ import { PUBLIC_PATH } from "./pathway";
 
 import { About } from "../pages/About";
 import { Blog, loaderBlogs } from "../pages/Blog";
-import { ChartAndDescription } from "../pages/ChartAndDescription";
 import { ErrorPage } from "../pages/ErrorPage";
+import { Login } from "../components/Login"
 import Contact from "../pages/Contact";
+import { Chart } from "../pages/Chart";
 
-const { HOME, ABOUT, BLOG, CHART } = PUBLIC_PATH;
+const { HOME, ABOUT, BLOG, LOGIN, CHART } = PUBLIC_PATH;
 
 export const PUBLIC_ROUTES = {
 	path: HOME,
@@ -19,13 +20,17 @@ export const PUBLIC_ROUTES = {
 			element: <About />,
 		},
 		{
-			path: CHART,
-			element: <ChartAndDescription />,
-		},
-		{
 			path: BLOG,
 			element: <Blog />,
 			loader: loaderBlogs,
+		},
+		{
+			path: CHART,
+			element: <Chart />,
+		},
+		{
+			path: LOGIN,
+			element: <Login />,
 		},
 		{
 			path: "contacts/:contactId",

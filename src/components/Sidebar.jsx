@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { PRIVATE_PATH, PUBLIC_PATH } from "../routes/pathway";
 
-import "./sidebar.css";
+import "../css/sidebar.css";
 import contact from "../assets/images/contact.svg";
 import document from "../assets/images/document.svg";
 import follow from "../assets/images/follow.svg";
@@ -22,7 +22,7 @@ export const Sidebar = () => {
 
 			<div className="sidebar-title_wrapper ">
 				<img className="sidebar-title_icon" src={lineMenu} alt="grid menu" />
-				<h1 className="sidebar-title">Código de red</h1>
+				<h1 className="sidebar-title">Reporte simplificado</h1>
 			</div>
 
 			{/* <Link className="sidebar-a" to={"/report"}>
@@ -38,7 +38,7 @@ export const Sidebar = () => {
 				</NavLink>
 			</div>
 
-			<div className="sidebar-item_wrapper activeLink">
+			<div className="sidebar-item_wrapper">
 				<NavLink className="sidebar-a" to={CHART}>
 					<div className="sidebar-item_icon">
 						<img src={chartLine} alt="Document icon" />
@@ -68,7 +68,7 @@ export const Sidebar = () => {
 					<div className="sidebar-item_icon">
 						<img src={follow} alt="Follow report template" />
 					</div>
-					<div className="sidebar-item_tag">Reporte simplificado</div>
+					<div className="sidebar-item_tag">Generar reporte</div>
 				</NavLink>
 			</div>
 

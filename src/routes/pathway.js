@@ -1,13 +1,14 @@
 export const PUBLIC_PATH = {
-	HOME: "/",
 	ABOUT: "/about",
 	BLOG: "/blogs",
 	CHART: "/chart",
+	HOME: "/",
+	LOGIN: "/login",
 	REPORT: "/report",
 };
 
-
 export const PRIVATE_PATH = {
 	PRIVATE: "/v1",
-	LOGOUT: "/v1/logout"
+	LOGOUT: "logout",
+	PROFILE: 'profile',
 }
