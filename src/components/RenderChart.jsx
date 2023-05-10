@@ -4,11 +4,9 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 
 import "../css/chart.css";
+import { graphData } from "../routes/helpers/graphData";
 
 export default function RenderChart({ data }) {
-
-	
-
 	// This code will only run one time
 	useLayoutEffect(() => {
 		const root = am5.Root.new("chartdiv");
@@ -64,7 +62,7 @@ export default function RenderChart({ data }) {
 			am5xy.DateAxis.new(root, {
 				maxDeviation: 0.2,
 				baseInterval: {
-					timeUnit: "day",
+					timeUnit: "minute",
 					count: 1,
 				},
 				renderer: am5xy.AxisRendererX.new(root, {}),
@@ -83,6 +81,8 @@ export default function RenderChart({ data }) {
 		const series = chart.series.push(
 			am5xy.LineSeries.new(root, {
 				name: "Series",
+				stroke: am5.color(0xE67E22),
+				strokeWidth: 1,
 				xAxis: xAxis,
 				yAxis: yAxis,
 				valueYField: "value",
@@ -103,7 +103,8 @@ export default function RenderChart({ data }) {
 		);
 
 		// Set data
-		const data = generateDatas(9000);
+		// const data = generateDatas(20);
+		const data = graphData;
 		console.log(data);
 		series.data.setAll(data);
 
